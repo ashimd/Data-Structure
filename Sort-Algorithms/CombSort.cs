@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrComb = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
+	    int[] arrComb = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
             Console.WriteLine("Comb Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrComb[i] + " ");
             }
-		}
+	}
 		
-		public static void CombSort(int[] array)
+	public static void CombSort(int[] array)
         {
             int n = array.Length;
             int gap = n;
@@ -56,11 +56,11 @@ namespace SortAlgorithm
             return gap;
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
