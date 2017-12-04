@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrBubble = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
+	    int[] arrBubble = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
             Console.WriteLine("Bubble Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrBubble[i] + " ");
             }   
-		}
+	}
 		
-		public static void BubbleSort(int[] array, bool recursive)
+	public static void BubbleSort(int[] array, bool recursive)
         {
             if (recursive)
                 BubbleSort(array, array.Length);
@@ -57,11 +57,11 @@ namespace SortAlgorithm
             BubbleSort(array, n - 1);
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
