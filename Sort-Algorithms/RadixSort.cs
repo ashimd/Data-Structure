@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrRadix = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 };
+	    int[] arrRadix = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 };
             Console.WriteLine("Radix Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrRadix[i] + " ");
             }
-		}
+	}
 		
-		public static void RadixSort(int[] arr)
+	public static void RadixSort(int[] arr)
         {
             int i, j;
             int[] tmp = new int[arr.Length];
@@ -41,11 +41,11 @@ namespace SortAlgorithm
             }
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
