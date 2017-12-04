@@ -14,7 +14,7 @@ namespace SortAlgorithm
             }
             Console.WriteLine();
             Console.WriteLine();
-            SortAlgorithm.ShellSort(arrShell);
+            ShellSort(arrShell);
             Console.WriteLine("Array After Sort");
             for (int i = 0; i < arrShell.Length; i++)
             {
