@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrQuick = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
+	    int[] arrQuick = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
             Console.WriteLine("Quick Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrQuick[i] + " ");
             }        
-		}
+	}
 		
-		public static void QuickSort(int[] array)
+	public static void QuickSort(int[] array)
         {
             QuickSort(array, 0, array.Length - 1);
         }
@@ -53,11 +53,11 @@ namespace SortAlgorithm
             QuickSort(array, i + 1, end);
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
