@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrMerge = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
+	    int[] arrMerge = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
             Console.WriteLine("Merge Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,14 +20,14 @@ namespace SortAlgorithm
             {
                 Console.Write(arrMerge[i] + " ");
             }          
-		}
+	}
 		
-		public static void MergeSort(int[] array)
+	public static void MergeSort(int[] array)
         {
             MergeSort(array, 0, array.Length - 1);
         }
 		
-		private static void MergeSort(int[] input, int low, int high)
+	private static void MergeSort(int[] input, int low, int high)
         {
             if (low < high)
             {
@@ -38,7 +38,7 @@ namespace SortAlgorithm
             }
         }
 		
-		private static void Merge(int[] input, int low, int middle, int high)
+	private static void Merge(int[] input, int low, int middle, int high)
         {
             int left = low;
             int right = middle + 1;
@@ -86,11 +86,11 @@ namespace SortAlgorithm
             }
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
