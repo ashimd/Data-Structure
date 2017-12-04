@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+   public class Program
+   {
+	public static void Main(string[] args)
         {
-			int[] arrHeap = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
+	    int[] arrHeap = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
             Console.WriteLine("Heap Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrHeap[i] + " ");
             }           
-		}
+	}
 		
-		public static void HeapSort(int[] array)
+	public static void HeapSort(int[] array)
         {
             // Build Max-Heap
             int heapSize = array.Length;
@@ -37,7 +37,7 @@ namespace SortAlgorithm
             }
         }
 		
-		private static void MaxHeapify(int[] input, int heapSize, int index)
+	private static void MaxHeapify(int[] input, int heapSize, int index)
         {
             int left = (index + 1) * 2 - 1;
             int right = (index + 1) * 2;
@@ -58,11 +58,11 @@ namespace SortAlgorithm
             }
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
