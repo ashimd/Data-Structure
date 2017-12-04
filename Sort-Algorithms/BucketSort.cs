@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrBucket = new int[] { -1, 25, -58964, 8547, -119, 0, 78596 };
+	    int[] arrBucket = new int[] { -1, 25, -58964, 8547, -119, 0, 78596 };
             Console.WriteLine("Bucket Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrBucket[i] + " ");
             }
-		}
+	}
 		
-		public static void BucketSort(int[] array)
+	public static void BucketSort(int[] array)
         {
             int minValue = array[0];
             int maxValue = array[0];
@@ -63,11 +63,11 @@ namespace SortAlgorithm
             }
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
