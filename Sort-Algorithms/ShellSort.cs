@@ -1,10 +1,10 @@
 namespace SortAlgorithm
 {
-	public class Program
-	{
-		public static void Main(string[] args)
+    public class Program
+    {
+	public static void Main(string[] args)
         {
-			int[] arrShell = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
+	    int[] arrShell = new int[] { 100, 50, 20, 40, 10, 60, 80, 70, 90, 30 };
             Console.WriteLine("Shell Sort");
             Console.WriteLine();
             Console.WriteLine("Array Before Sort");
@@ -20,9 +20,9 @@ namespace SortAlgorithm
             {
                 Console.Write(arrShell[i] + " ");
             } 
-		}
+	}
 		
-		public static void ShellSort(int[] array)
+	public static void ShellSort(int[] array)
         {
             int n = array.Length;
 
@@ -45,11 +45,11 @@ namespace SortAlgorithm
             }
         }
 
-		private static void Swap(int[] array, int i, int j)
+	private static void Swap(int[] array, int i, int j)
         {
             int temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
-	}	
+    }	
 }
